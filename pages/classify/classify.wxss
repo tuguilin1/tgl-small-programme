@@ -1,0 +1,51 @@
+.classify-header{
+	text-align: center;
+	font-size: 45rpx;
+	color:black;
+	font-weight: bolder;
+	margin-top: 40rpx;
+	margin-bottom: 30rpx;
+}
+
+.search-tag{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.classify-box{
+	box-sizing: border-box;
+	padding-left: 60rpx;
+	padding-right: 60rpx;
+
+}
+
+.search-tag view{
+	text-align: center;
+	padding: 20rpx 50rpx;
+	border:3rpx solid green;
+	margin-top: 40rpx;
+	border-radius: 60rpx;
+	color:green;
+	margin-bottom: 30rpx;
+}
+
+.color2 view{
+	border:3rpx solid orange;
+	color:orange;
+}
+
+.color3 view{
+	border:3rpx solid #09BCDC;
+	color:#09BCDC;
+}
+
+.color4 view{
+	border:3rpx solid #BE0D98;
+	color:#BE0D98;
+}
+
+.color5 view{
+	border:3rpx solid #E47F06;
+	color:#E47F06;
+}

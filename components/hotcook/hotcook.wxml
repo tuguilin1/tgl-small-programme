@@ -1,0 +1,4 @@
+<view class="hotcook">
+	<image lazy-load="true" src="{{pic}}" />
+	<text class="food-name">{{name}}</text>
+</view>

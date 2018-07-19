@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "贵林美食",
+  "usingComponents": {
+    "hotcook": "../../components/hotcook/hotcook"
+   }
+}

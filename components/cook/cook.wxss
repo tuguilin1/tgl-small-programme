@@ -1,0 +1,38 @@
+.cook{
+	box-sizing: border-box;
+	margin-left: 30rpx;
+	padding-bottom: 50rpx;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 50rpx;
+	border-bottom: 1rpx solid #BBB;
+}
+
+.cook-img{
+	width: 40%;
+	height: 200rpx;
+	margin-right: 40rpx;
+}
+
+.cook-img image{
+	width: 100%;
+	height: 100%;
+}
+
+.cook-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.cook-time{
+	margin-top: 20rpx;
+	font-size: 30rpx;
+	color:#999;
+}
+
+.cook-collected{
+	font-size: 30rpx;
+	color:#999;
+}

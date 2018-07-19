@@ -1,0 +1,16 @@
+Component({
+	properties:{
+		name:{
+			type:String
+		},
+		id:{
+			type:Number
+		},
+		pic:{
+			type:String
+		},
+		preparetime:{
+			type:String
+		}
+	}
+})

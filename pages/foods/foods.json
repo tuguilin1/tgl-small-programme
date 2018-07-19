@@ -1,0 +1,5 @@
+ {
+ 	"usingComponents": {
+	    "cook": "../../components/cook/cook"
+	 }
+}

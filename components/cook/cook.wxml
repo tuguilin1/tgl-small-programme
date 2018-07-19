@@ -1,0 +1,10 @@
+<view class="cook">
+	<view class="cook-img">
+		<image src="{{pic}}" />
+	</view>
+	<view class="cook-info">
+		<view class="cook-name">{{name}}</view>
+		<view class="cook-time">{{preparetime}}</view>
+		<view class="cook-collected">100收藏</view>
+	</view>
+</view>
