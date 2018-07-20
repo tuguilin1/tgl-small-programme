@@ -1,12 +1,12 @@
 <!--index.wxml-->
 <view>
   <view class="header">
-      <input bindfocus="bindFocus" bindblur="bindBlur" class="input" type="text" confirm-type="search" placeholder-class="{{placeholder}}" placeholder="搜你想吃的" />
+      <input bindfocus="bindFocus" bindblur="bindBlur" bindinput="bindInput" bindconfirm="bindConfirm" class="input" type="text" confirm-type="search" placeholder-class="{{placeholder}}" placeholder="搜你想吃的" />
       <icon class="search-icon" size="18" type="search" wx:if="{{isiconShow}}"> </icon>
   </view>
   <view class="container-header">今日精选</view>
-  <view class="container"  >	
-  	<hotcook wx:for="{{food}}" wx:key="{{index}}" pic="{{item.pic}}" name="{{item.name}}" id="{{item.id}}"></hotcook>
+  <view class="container" bindtap="jumpDetail">	
+  	<hotcook data-id="{{item.id}}" wx:for="{{food}}" wx:key="{{index}}" pic="{{item.pic}}" name="{{item.name}}" id="{{item.id}}"></hotcook>
   </view>
   
 </view>

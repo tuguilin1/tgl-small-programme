@@ -1,6 +1,6 @@
 <view class="foods">
 	<view>
-		<cook wx:key="{{index}}" wx:for="{{list}}" name="{{item.name}}" id="{{item.id}}" preparetime="{{item.preparetime}}" pic="{{item.pic}}"></cook>
+		<cook bindtap="jumpDetail" data-id="{{item.id}}" wx:key="{{index}}" wx:for="{{list}}" name="{{item.name}}" id="{{item.id}}" preparetime="{{item.preparetime}}" pic="{{item.pic}}"></cook>
 	</view>
 	
 </view>

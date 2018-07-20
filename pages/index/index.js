@@ -48,14 +48,31 @@ Page({
       start:that.data.start+20
     })
   },
-  bindBlur:function(e){
+  bindInput:function(e){
     this.setData({
       value:e.detail.value
     })
+  },
+  bindBlur:function(e){
     if(e.detail.value === ""){
       this.setData({
         isiconShow:true,
         placeholder:"placeholder"
+      })
+    }
+  },
+  bindConfirm:function(){
+    if(this.data.value !== ""){
+      wx.navigateTo({
+        url:`/pages/foods/foods?name=${this.data.value}`
+      })
+    }
+  },
+  jumpDetail:function(e){
+    let id = e.target.dataset.id;
+    if(id){
+      wx.navigateTo({
+        url:`/pages/detail/detail?id=${id}`
       })
     }
   },

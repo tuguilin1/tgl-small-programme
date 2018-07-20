@@ -1,0 +1,68 @@
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class="detail">
+	<view class="cook-image">
+		<image src="{{cookPic}}"/>
+	</view>
+	<view class="cook-name">
+		{{cookName}}
+	</view>
+	<view class="cook-info">
+		<view>100人浏览*100人收藏</view>
+	</view>
+	<view class="cook-tag">
+		<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+	</view>
+	<view class="material">
+		——食材清单——
+	</view>
+	<view class="material-list">
+		<view wx:for="{{materialList}}" wx:key="{{index}}">
+			<view>{{item.mname}}</view>
+			<view>{{item.amount}}</view>
+		</view>
+	</view>
+	<view class="cook-process-header">
+		——烹饪步骤——
+	</view>
+	<view class="cook-process">
+		<view class="cook-process-detail" wx:for="{{cookProcess}}" wx:key="{{index}}">
+			<view class="cook-process-image">
+				<image lazy-load="true" src="{{item.pic}}"/>
+			</view>
+			<view class="cook-process-text">
+				{{index}}.{{item.pcontent}}
+			</view>
+		</view>
+	</view>
+	<view class="cook-end">
+		——End——
+	</view>
+	<view class="footer">
+		<view class="footer-tag">
+			<view class="footer-image">
+				<image src="../../images/shouye.png" />
+			</view>
+			<view>
+				首页
+			</view>	
+		</view>
+		<view class="footer-tag">
+			<view class="footer-image">
+				<image src="../../images/save.png" />
+			</view>
+			<view>
+				收藏
+			</view>	
+		</view>
+		<view class="footer-tag">
+			<view class="footer-image">
+				<image src="../../images/zhuanfa.png" />
+			</view>
+			<view>
+				转发
+			</view>	
+		</view>
+
+	</view>
+</view>

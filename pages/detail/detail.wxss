@@ -1,0 +1,106 @@
+.cook-image{
+	width: 100%;
+}
+
+.cook-image image{
+	width: 100%
+}
+
+.cook-name{
+	text-align:center;
+	margin-top: 20rpx;
+	margin-bottom: 20rpx;
+	font-weight: bolder;
+	font-size: 40rpx;
+}
+
+.cook-info{
+	text-align: center;
+	margin-bottom: 20rpx;
+	font-size: 30rpx;
+	color:#999;
+}
+
+.cook-tag{
+	box-sizing: border-box;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	margin-top: 50rpx;
+	margin-bottom: 50rpx;
+}
+
+.material,.cook-process-header,.cook-end{
+	font-size: 40rpx;
+	font-weight: bolder;
+	text-align: center;
+	margin-top: 100rpx;
+	margin-bottom: 50rpx;
+}
+
+.material-list{
+	box-sizing: border-box;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+}
+
+.material-list>view{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1rpx solid #999;
+	margin-top: 20rpx;
+	margin-bottom: 20rpx;
+	box-sizing: border-box;
+	padding-bottom: 10rpx;
+}
+
+.cook-process{
+	box-sizing: border-box;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+}
+
+.cook-process-image{
+	width: 100%;
+}
+.cook-process-detail{
+	margin-bottom: 30rpx;
+}
+.cook-process-image image{
+	width: 100%;
+} 
+
+.cook-process-text{
+	margin-top: 20rpx;
+	margin-bottom: 60rpx;
+}
+
+.footer{
+	display:flex;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 120rpx;
+	background: black;
+	line-height: 120rpx;
+}
+
+.footer-tag{
+	display: flex;
+	color:#ffffff;
+
+}
+
+.footer-image{
+	width: 40rpx;
+	height: 40rpx;
+	margin-top: 40rpx;
+}
+
+.footer-image image{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+

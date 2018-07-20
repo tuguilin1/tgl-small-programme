@@ -5,6 +5,14 @@ Page({
 	onLoad:function(option){
 		this.searchFood(option.name)
 	},
+	jumpDetail:function(e){
+	    let id = e.target.dataset.id;
+	    if(id){
+	      wx.navigateTo({
+	        url:`/pages/detail/detail?id=${id}`
+	      })
+	    }
+	},
 	searchFood:function(keyword){
 	    let that = this
 	    wx.request({
