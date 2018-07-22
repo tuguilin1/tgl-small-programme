@@ -8,5 +8,7 @@
   <view class="container" bindtap="jumpDetail">	
   	<hotcook data-id="{{item.id}}" wx:for="{{food}}" wx:key="{{index}}" pic="{{item.pic}}" name="{{item.name}}" id="{{item.id}}"></hotcook>
   </view>
-  
+  <view class="loading" wx:if="{{isloadShow}}">
+  	加载中
+  </view>
 </view>

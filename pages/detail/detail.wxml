@@ -31,7 +31,7 @@
 				<image lazy-load="true" src="{{item.pic}}"/>
 			</view>
 			<view class="cook-process-text">
-				{{index}}.{{item.pcontent}}
+				{{index+1}}.{{item.pcontent}}
 			</view>
 		</view>
 	</view>

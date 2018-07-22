@@ -1,11 +1,12 @@
 {
   "pages":[
-    
+    "pages/my/my",
     "pages/classify/classify",
     "pages/index/index",
     "pages/logs/logs",
     "pages/detail/detail",
     "pages/foods/foods"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -32,7 +33,7 @@
         "text":"分类"
       },
       {
-        "pagePath":"pages/index/index",
+        "pagePath":"pages/my/my",
         "iconPath":"images/my.png",
         "selectedIconPath":"images/my-selected.png",
         "text":"我的"

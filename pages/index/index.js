@@ -7,9 +7,10 @@ Page({
     isiconShow:true,
     placeholder:"placeholder",
     value:"",
-    list:[76,225,253,296,337,236,311,2,85,309],
+    list:[76,225,253,297,337,236,311,2,85,309],
     food:[],
-    start:0
+    start:0,
+    isloadShow:true
   },
   onLoad:function(){
         this.getfood()
@@ -35,11 +36,12 @@ Page({
             'content-type': 'application/json'
         },
         success: function(res) {
-          console.log(res.data)
+          
           if(res.data.result.status === '0'){
             that.setData({
               food:that.data.food.concat(res.data.result.result.list),
               iscontainerShow:true,
+              isloadShow:false
             })
           }
         }
@@ -77,6 +79,9 @@ Page({
     }
   },
   onReachBottom:function(){
+    this.setData({
+      isloadShow:true
+    })
     this.getfood()
   }
 })

@@ -48,3 +48,10 @@
 .container hotcook{
 	width: 42%;
 }
+
+.loading{
+	height: 100rpx;
+	width: 100%;
+	line-height: 100rpx;
+	text-align: center;
+}
