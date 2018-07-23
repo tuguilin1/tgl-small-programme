@@ -22,6 +22,9 @@ Page({
     })
   },
   bindGetUserInfo: function(e) {
-    console.log(e.detail.userInfo,2)
+    console.log(e.detail.userInfo);
+    this.setData({
+      isUserShow:true
+    })
   }
 })
